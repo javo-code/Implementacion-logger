@@ -1,0 +1,15 @@
+NODE_ENV=
+MONGO_URL_LOCAL=
+MONGO_URL_ATLAS=
+PORT=
+PERSISTENCE="MONGO"
+SECRET_KEY_JWT=
+
+------------- 📌 MAILER
+PASSWORD=
+EMAIL=
+
+⚠ estos son solo a modo representativo ya que no tengo una base de datos en MYSQL
+MYSQL_DB='JAVO-CODE-SQL'
+MYSQL_USER='root'
+MYSQL_PASS=''
