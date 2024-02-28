@@ -38,13 +38,13 @@ export default class UserService extends Services {
     }
   }
 
-  async geUserByEmail(email){
-  try {
-    const user = await userDao.getByEmail(email);
-    if (!user) return false;
-    else return user;
-  } catch (error) {
-    console.log(error);
-  }
-};
+  async getUserByEmail(email){
+    try {
+      const user = await userDao.getByEmail(email);
+      if (!user) return false;
+      else return user;
+    } catch (error) {
+      console.log(error);
+    }
+  };
 }
