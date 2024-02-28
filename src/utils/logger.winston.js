@@ -27,13 +27,13 @@ const fileErrorTransport = new transports.File({
 });
 
 
-const logger = createLogger({
+export const logger = createLogger({
   format: combine(timestamp(), logFormat),
   transports: [consoleTransport, fileErrorTransport],
 });
 
 
-export const ejemploWinston = () => {
+export const loggerWinston = () => {
   logger.silly("imprimimos silly");
   logger.debug("imprimimos debug");
   logger.verbose("imprimimos verbose");
@@ -43,5 +43,4 @@ export const ejemploWinston = () => {
   logger.error("imprimimos error");
 };
 
-
-ejemploWinston();
+loggerWinston();
